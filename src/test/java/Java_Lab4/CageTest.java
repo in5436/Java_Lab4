@@ -29,7 +29,7 @@ class CageTest {
         lionCage.addAnimal(new Lion("Сімба"));
         lionCage.addAnimal(new Lion("Алекс"));
 
-        Lion shram = new Lion("Шрам"); // Третій лев
+        Lion shram = new Lion("Шрам");
 
         assertThrows(CageFullException.class, () -> {
             lionCage.addAnimal(shram);
